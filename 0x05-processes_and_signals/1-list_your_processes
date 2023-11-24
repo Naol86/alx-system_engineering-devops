@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Get the process list with hierarchy information
+ps -auxf

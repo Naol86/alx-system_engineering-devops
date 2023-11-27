@@ -5,9 +5,9 @@ while [ $Hour -lt 12 ]
 do
 	echo "Hour: $Hour"
 	i=1
-	while [ $i -lt 59 ]
+	while [ $i -lt 60 ]
 	do
-		echo $i
+		echo "$i"
 		((i++))
 	done
 	((Hour++))

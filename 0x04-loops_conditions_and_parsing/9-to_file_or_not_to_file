@@ -2,7 +2,7 @@
 # checks if school file is exist
 
 var="school"
-if [ -f "$var" ]
+if [ -a "$var" ]
 then
 	echo "school file exist"
 	if [ -s "$var" ]

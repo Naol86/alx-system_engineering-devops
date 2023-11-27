@@ -5,19 +5,20 @@ var=school
 if [ -a $var ]
 then
 	echo "school file exists"
+
+	# if the var is empty/non-empty
 	if [ -s $var ]
 	then
 		echo "school file is not empty"
 	else
-	then
 		echo "school file is empty"
 	fi
 
+	# if the var is a regular var
 	if [ -f $var ]
 	then
 		echo "school is a regular file"
 	fi
 else
-then
 	echo "school file does not exist"
 fi

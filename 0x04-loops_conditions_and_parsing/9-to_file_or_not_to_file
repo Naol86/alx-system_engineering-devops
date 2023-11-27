@@ -1,21 +1,21 @@
 #!/usr/bin/env bash
 # checks if school file is exist
 
-var="school"
-if [ -a "$var" ]
+var=school
+if [ -a $var ]
 then
-	echo "school file exist"
-	if [ -s "$var" ]
-	then
-		echo "school file is empty"
-	else
+	echo "school file exists"
+	if [ -s $var ]
 	then
 		echo "school file is not empty"
+	else
+	then
+		echo "school file is empty"
 	fi
 
-	if [ -f "$var" ]
+	if [ -f $var ]
 	then
-		echo "school is regular file"
+		echo "school is a regular file"
 	fi
 else
 then

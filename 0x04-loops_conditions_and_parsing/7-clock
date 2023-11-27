@@ -4,11 +4,11 @@ Hour=0
 while [ $Hour -lt 13 ]
 do
 	echo "Hour: $Hour"
-	i=1
-	while [ $i -lt 60 ]
+	minute=1
+	while [ $minute -lt 60 ]
 	do
-		echo "$i"
-		((i++))
+		echo "$minute"
+		((minute++))
 	done
 	((Hour++))
 done

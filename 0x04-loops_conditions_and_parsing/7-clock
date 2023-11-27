@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #print Hour
 Hour=0
-while [ $Hour -lt 12 ]
+while [ $Hour -lt 13 ]
 do
 	echo "Hour: $Hour"
 	i=1

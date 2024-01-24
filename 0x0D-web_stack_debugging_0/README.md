@@ -1,0 +1,1 @@
+install docker and apech in server

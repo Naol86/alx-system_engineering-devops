@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 # Install and configure HAproxy on  lb-01 server
-sudo apt-get update
-sudo apt-get -y install haproxy
+
+apt-get update
+apt-get -y install --no-install-recommends software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-2.4
+apt-get -y install haproxy
+
 # the load balancer's configuration
 DOMAIN_NAME='naol.tech'
 INIT_FILE='/etc/default/haproxy'

@@ -49,4 +49,4 @@ backend naol.tech-backend
         balance roundrobin
         redirect scheme https if !{ ssl_fc }
         server 470121-web-01 52.91.146.69:80 check
-        server 470121-web-02 52.72.30.114:80 check
+        server 470121-web-02 107.22.146.41:80 check

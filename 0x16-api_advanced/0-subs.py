@@ -1,4 +1,7 @@
+#!/usr/bin/python3
+"""this is request"""
 import requests
+
 
 def number_of_subscribers(subreddit):
     """Print the titles of the 10 hottest posts on a given subreddit."""
@@ -10,7 +13,7 @@ def number_of_subscribers(subreddit):
 
     try:
         response = requests.get(url, headers=headers, allow_redirects=False)
-        response.raise_for_status()  # Raise an exception for 4xx and 5xx status codes
+        response.raise_for_status()
         return response.json().get('data', {}).get('subscribers', 0)
     except requests.exceptions.RequestException as e:
         print(f"An error occurred: {e}")

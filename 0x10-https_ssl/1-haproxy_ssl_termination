@@ -41,12 +41,12 @@ frontend naol.tech-frontend
         default_backend naol.tech-backend
 
 frontend naol.tech-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.naol.tech.pem
+        bind *:443 ssl crt /etc/letsencrypt/live/www.naol.tech/fullchain.pem
         http-request set-header X-Forwarded-Proto https
         default_backend naol.tech-backend
 
 backend naol.tech-backend
         balance roundrobin
         redirect scheme https if !{ ssl_fc }
-        server 470121-web-01 52.91.146.69:80 check
-        server 470121-web-02 107.22.146.41:80 check
+        server 470121-web-01 54.157.164.6:80 check
+        server 470121-web-02 34.229.72.50:80 check
